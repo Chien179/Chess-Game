@@ -19,7 +19,7 @@ namespace UserInterface
         public Menu()
         {
             InitializeComponent();
-            this.selectedLevel = 2;
+            this.selectedLevel = 3;
             label5.Text = levels[this.selectedLevel];
         }
       

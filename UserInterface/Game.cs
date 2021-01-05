@@ -75,11 +75,6 @@ namespace UserInterface
             return pictureBox2;
         }
 
-        public Label getPlayer()
-        {
-            return this.label2;
-        }
-
         public void disable()
         {
             this.board.Enabled = false;            
@@ -104,7 +99,6 @@ namespace UserInterface
                 this.board.draw();
                 this.history.undoLatestMove();
                 this.removePieces.draw(this.history.getMoveHistory());
-                this.getPlayer().Text = this.board.LogicBoard.CurrentPlayer.getAlliance() == Sides.WHITE ? "WHITE PLAYER'S TURN" : "BLACK PLAYER'S TURN";
                 if (this.board.LogicBoard.CurrentPlayer.getOpponent().getAlliance() == Sides.WHITE)
                     this.undo();
             }
@@ -142,7 +136,7 @@ namespace UserInterface
 
         private void label4_MouseEnter(object sender, EventArgs e)
         {
-            label4.ForeColor = Color.DarkCyan;
+            label4.ForeColor = Color.BlueViolet;
         }
 
         private void label4_MouseLeave(object sender, EventArgs e)
@@ -152,7 +146,7 @@ namespace UserInterface
        
         private void label5_MouseEnter(object sender, EventArgs e)
         {
-            label5.ForeColor = Color.DarkCyan;
+            label5.ForeColor = Color.BlueViolet;
 
         }
 
@@ -164,7 +158,7 @@ namespace UserInterface
 
         private void label6_MouseEnter(object sender, EventArgs e)
         {
-            label6.ForeColor = Color.DarkCyan;
+            label6.ForeColor = Color.BlueViolet;
         }
 
         private void label6_MouseLeave(object sender, EventArgs e)
@@ -179,22 +173,12 @@ namespace UserInterface
 
         private void label7_MouseEnter(object sender, EventArgs e)
         {
-            label7.ForeColor = Color.DarkCyan;
+            label7.ForeColor = Color.BlueViolet;
         }
 
         private void label7_MouseLeave(object sender, EventArgs e)
         {
             label7.ForeColor = Color.White;
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -208,7 +192,7 @@ namespace UserInterface
 
         private void musicBoxbutton_MouseEnter(object sender, EventArgs e)
         {
-            musicBoxbutton.ForeColor = Color.DarkCyan;
+            musicBoxbutton.ForeColor = Color.BlueViolet;
         }
 
         private void musicBoxbutton_MouseLeave(object sender, EventArgs e)
@@ -358,12 +342,6 @@ namespace UserInterface
             }
         }
 
-
-        public void setNextPlayer()
-        {
-            this.GameForm.getPlayer().Text = this.LogicBoard.CurrentPlayer.getAlliance() == Sides.WHITE ? "WHITE PLAYER'S TURN" : "BLACK PLAYER'S TURN";
-        }
-
         public void executeMove(MoveTransition transition, Move move)
         {
             this.LogicBoard = transition.ToBoard;
@@ -371,7 +349,6 @@ namespace UserInterface
             this.GameForm.getRemovedPiecesPanel().draw(this.GameForm.getHistoryTable().getMoveHistory());
             this.draw();
             this.refreshCell();
-            this.setNextPlayer();
 
             if ((this.LogicBoard.CurrentPlayer.isCheckMate() || this.LogicBoard.CurrentPlayer.isStaleMate()) &&
               this.LogicBoard.CurrentPlayer.getAlliance() == Sides.WHITE)
@@ -396,7 +373,6 @@ namespace UserInterface
         {
             this.draw();
             this.refreshCell();
-            this.setNextPlayer();        
         }
     }
 
@@ -408,7 +384,7 @@ namespace UserInterface
         private int cellID;
         private BoardPanel board;
         private static Color lightColor = Color.White;
-        private static Color darkColor = Color.Black;
+        private static Color darkColor = Color.DarkBlue;
         private Color prevColor;
 
 
@@ -601,6 +577,8 @@ namespace UserInterface
             this.Location = new Point(650, 61);
             this.Size = new Size(300, 480);
             this.BackgroundColor = Color.White;
+            this.SendToBack();
+            this.Visible = false;
 
             this.Columns.Add(new DataGridViewTextBoxColumn());
             this.Columns.Add(new DataGridViewTextBoxColumn());
@@ -765,7 +743,7 @@ namespace UserInterface
             this.ColumnCount = 2;
             this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
             this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.BackColor = Color.Orange;
+            this.BackColor = Color.DarkBlue;
 
             this.Size = new Size(120, 240);
             this.DoubleBuffered = true;
@@ -789,7 +767,7 @@ namespace UserInterface
             this.ColumnCount = 2;
             this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
             this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.BackColor = Color.Orange;
+            this.BackColor = Color.White;
 
             this.Size = new Size(120, 240);
             this.DoubleBuffered = true;
