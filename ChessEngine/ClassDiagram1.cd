@@ -15,21 +15,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ChessEngine.Board" Collapsed="true">
-    <Position X="21.25" Y="8.5" Width="1.5" />
+    <Position X="23.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BQQAQEAEAkAAAAAAAgAAIAAAAgAAgACAIBBAgAEQDAA=</HashCode>
       <FileName>Board.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ChessEngine.BoardUtils" Collapsed="true">
-    <Position X="21.25" Y="7.5" Width="1.5" />
+    <Position X="23.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAADAAAAAAAAgECAAAAABIAAQEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BoardUtils.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ChessEngine.Builder" Collapsed="true">
-    <Position X="21.75" Y="6.5" Width="1.5" />
+    <Position X="23.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAgAAAAAAgAQAAAAACgAAAIAAAqAAAAAAAAA=</HashCode>
       <FileName>Builder.cs</FileName>
@@ -177,7 +177,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ChessEngine.MoveHistory" Collapsed="true">
-    <Position X="21.5" Y="10" Width="1.5" />
+    <Position X="23.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABAAgAQCAAAAAAAAAIAAASAAA=</HashCode>
       <FileName>MoveHistory.cs</FileName>
@@ -191,7 +191,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ChessEngine.MoveStatus" Collapsed="true">
-    <Position X="21.25" Y="9.25" Width="1.5" />
+    <Position X="23.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAgAAAAAQAAAAAAAAAAAAAAAQAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>MoveTransition.cs</FileName>
@@ -220,21 +220,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ChessEngine.Player" Collapsed="true">
-    <Position X="6.5" Y="5.25" Width="1.5" />
+    <Position X="6.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BgAQEAAEQAAACABAYAAAAAAAIAJABAAAIAIEAACAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ChessEngine.WhitePlayer" Collapsed="true">
-    <Position X="4.25" Y="6.75" Width="1.5" />
+    <Position X="4.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAACAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ChessEngine.BlackPlayer" Collapsed="true">
-    <Position X="8.5" Y="6.75" Width="1.5" />
+    <Position X="7.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAACAAAA=</HashCode>
       <FileName>Player.cs</FileName>
@@ -270,7 +270,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ChessEngine.TranspositionTable" Collapsed="true">
-    <Position X="21.75" Y="11" Width="1.5" />
+    <Position X="23.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAEAAAAAAAIAACAAAAAAAAEAAAABAAAAAAAAACAAA=</HashCode>
       <FileName>TranspositionTable.cs</FileName>
